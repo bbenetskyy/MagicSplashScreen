@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:magic="http://magic.com/schemas/gradients"
+    x:Class="MagicSplashScreen.SplashPage">
+    <Grid>
+        <magic:GradientView HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="FillAndExpand">
+                <magic:GradientView.Triggers>
+                    <magic:AnimationTrigger IsRunning="{Binding .}">
+                        <magic:ColorAnimation Target="{x:Reference AnimationColor}" 
+                                              TargetProperty="magic:GradientStop.Color" 
+                                              From="#f95dca" To="#0b0eb3" 
+                                              Duration="3000"
+                                              RepeatBehavior="Forever" 
+                                              AutoReverse="True" />
+                    </magic:AnimationTrigger>
+                </magic:GradientView.Triggers>
+                <magic:LinearGradient Angle="-45">
+                    <magic:GradientStop Color="#f95dca" />
+                    <magic:GradientStop Color="#f95dca" x:Name="AnimationColor" />
+                </magic:LinearGradient>
+            </magic:GradientView>
+        <Label Text="Magic Gradients"
+               TextColor="White"
+               FontSize="Title"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+    </Grid>
+</ContentPage>
+
