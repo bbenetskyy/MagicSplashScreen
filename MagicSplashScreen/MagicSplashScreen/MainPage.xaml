@@ -1,25 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:magic="http://magic.com/schemas/gradients"
              x:Class="MagicSplashScreen.MainPage">
-
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
-
+    <Grid>
+        <magic:GradientView GradientSource="radial-gradient(circle farthest-corner at 91% 26%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 3%, rgba(0,0,0,0) 3%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 27% 63%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 3%, rgba(0,0,0,0) 3%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 59% 48%, rgba(255,255,255,0.00999999977648258) 0%, rgba(255,255,255,0.00999999977648258) 3%, rgba(0,0,0,0) 3%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 58% 65%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 3%, rgba(0,0,0,0) 3%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 55% 21%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 3%, rgba(0,0,0,0) 3%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 88% 4%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 9% 23%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 40% 78%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 78% 5%, rgba(255,255,255,0.00999999977648258) 0%, rgba(255,255,255,0.00999999977648258) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 11% 87%, rgba(255,255,255,0.00999999977648258) 0%, rgba(255,255,255,0.00999999977648258) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 11% 24%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 18% 75%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 71% 80%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 7%, rgba(0,0,0,0) 7%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 34% 79%, rgba(255,255,255,0.00999999977648258) 0%, rgba(255,255,255,0.00999999977648258) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 9% 51%, rgba(255,255,255,0.0299999993294477) 0%, rgba(255,255,255,0.0299999993294477) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 46% 69%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 54% 90%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 55% 58%, rgba(255,255,255,0.00999999977648258) 0%, rgba(255,255,255,0.00999999977648258) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 95% 37%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),radial-gradient(circle farthest-corner at 9% 4%, rgba(255,255,255,0.0199999995529652) 0%, rgba(255,255,255,0.0199999995529652) 5%, rgba(0,0,0,0) 5%, rgba(0,0,0,0) 100%),linear-gradient(135deg, rgba(249,93,202,1) 0%, rgba(11,13,179,1) 100%)"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"/>
+        <Label Text="Welcome to Xamarin.Forms!"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               TextColor="White"
+               FontSize="Title"/>
+    </Grid>
 </ContentPage>
 
