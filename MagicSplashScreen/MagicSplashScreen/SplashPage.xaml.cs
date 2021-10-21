@@ -23,7 +23,13 @@ namespace MagicSplashScreen
             });
         }
 
-        private Task SetupDependencies() => Task.Delay(TimeSpan.FromSeconds(1.5));
+        private Task SetupDependencies() => Task.WhenAll(
+            //Local initialization of shared things moved from App.xaml.cs here
+            // Replace this Completed Task with your iOS Registration; Global Hard Stuff initalisatioin
+            Task.CompletedTask,
+            // Platform specific initialisation
+            App.Container.GetInstance<IPlatformInitializer>().Initialize()
+        );
     }
 }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using SimpleInjector;
 using UIKit;
 
 namespace MagicSplashScreen.iOS
@@ -25,6 +26,8 @@ namespace MagicSplashScreen.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            App.Container.Register<IPlatformInitializer, iOSPlatformInitializer>(Lifestyle.Singleton);
+            
             return base.FinishedLaunching(app, options);
         }
     }

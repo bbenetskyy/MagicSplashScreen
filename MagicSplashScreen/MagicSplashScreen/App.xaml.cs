@@ -1,4 +1,5 @@
 ﻿using System;
+using SimpleInjector;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,6 +7,13 @@ namespace MagicSplashScreen
 {
     public partial class App : Application
     {
+        public static readonly Container Container;
+
+        static App()
+        {
+            Container = new Container();
+        }
+        
         public App()
         {
             InitializeComponent();
