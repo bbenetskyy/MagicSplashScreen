@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-
-  <style name="MainTheme" parent="MainTheme.Base">
+  <style name="MainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">#4488c7</item>
+        <item name="colorPrimaryDark">#005b96</item>
+        <item name="colorAccent">#7bb8fa</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:color">@color/colorAccent</item> 
+        <item name="android:colorPressedHighlight">@color/colorAccent</item>
+        <item name="android:colorLongPressedHighlight">@color/colorAccent</item>
+        <item name="android:colorFocusedHighlight">@color/colorAccent</item>
+        <item name="android:colorActivatedHighlight">@color/colorAccent</item>
+        <item name="android:activatedBackgroundIndicator">@color/colorAccent</item>
         <item name="android:windowFullscreen">true</item>
-    <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
-    <!-- If you want to override anything you can do that here. -->
-    <!-- Underneath are a couple of entries to get you started. -->
-
-    <!-- Set theme colors from https://aka.ms/material-colors -->
-    <!-- colorPrimary is used for the default action bar background -->
-    <!--<item name="colorPrimary">#2196F3</item>-->
-    <!-- colorPrimaryDark is used for the status bar -->
-    <!--<item name="colorPrimaryDark">#1976D2</item>-->
-    <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets -->
-    <!--<item name="colorAccent">#FF4081</item>-->
+        <item name="android:windowBackground">#f95dca</item>
   </style>
 </resources>
