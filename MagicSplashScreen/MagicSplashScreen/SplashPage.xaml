@@ -24,7 +24,7 @@
             </magic:GradientView>
         <Label Text="Magic Gradients"
                TextColor="White"
-               FontSize="Title"
+               FontSize="36"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                HorizontalTextAlignment="Center"

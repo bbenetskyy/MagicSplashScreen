@@ -71,7 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -134,5 +133,8 @@
       <Project>{EF70115A-1CC1-40C9-977B-D62A4C5362C7}</Project>
       <Name>MagicSplashScreen</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\Launch Screen.storyboard" />
   </ItemGroup>
 </Project>
